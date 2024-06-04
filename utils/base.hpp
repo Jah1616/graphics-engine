@@ -1,4 +1,6 @@
+#pragma once
 #include <array>
+#include <list>
 #include "vector3d.h"
 
 
@@ -6,24 +8,38 @@ struct Color {
     double r, g, b;
 };
 
-
-struct Face : public std::vector<size_t> {
-    Face(size_t size) : color{0,0,0} {
-        resize(size);
-    }
-    Color color;
-};
+img::Color::Color(const ::Color& c)
+:red(lround(c.r * 255))
+,green(lround(c.g * 255))
+,blue(lround(c.b * 255))
+{}
 
 struct Point2D {
     double x, y;
+    void operator += (const Point2D& p){
+        x += p.x;
+        y += p.y;
+    }
+    Point2D operator + (Point2D p) const {
+        p += *this;
+        return p;
+    }
+    Point2D operator - () const {
+        return {-x, -y};
+    }
+    void operator -= (const Point2D& p){
+        *this += -p;
+    }
+    Point2D operator - (Point2D p) const {
+        p -= *this;
+        return p;
+    }
 };
 
-
-template <typename T>
-struct Figure {
-    std::vector<T*> points;
-    std::vector<Face> faces;
+struct Line2D {
+    Point2D* p1;
+    Point2D* p2;
+    Color* color;
 };
 
-using Figure2D = Figure<Point2D>;
-using Figure3D = Figure<Vector3D>;
+using Lines2D = std::list<Line2D*>;

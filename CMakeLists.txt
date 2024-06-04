@@ -18,7 +18,7 @@ set(engine_sources
 		engine.cpp
 		easy_image.cpp
 		ini/ini_configuration.cpp
-		l-systems.cpp
+		utils/l-systems.cpp
 )
 
 ############################################################
