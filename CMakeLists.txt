@@ -15,9 +15,10 @@ set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${OWN_GXX_FLAGS}")
 # List all sources
 ############################################################
 set(engine_sources
-		engine.cc
-		easy_image.cc
-		ini/ini_configuration.cc
+		engine.cpp
+		easy_image.cpp
+		ini/ini_configuration.cpp
+		l-systems.cpp
 )
 
 ############################################################

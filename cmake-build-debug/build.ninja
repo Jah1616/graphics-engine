@@ -49,23 +49,29 @@ cmake_ninja_workdir = C$:/Users/jahso/Documents/School/ComputerGraphics/graphics
 
 build cmake_object_order_depends_target_engine: phony || CMakeFiles/engine.dir
 
-build CMakeFiles/engine.dir/engine.cc.obj: CXX_COMPILER__engine_unscanned_Debug C$:/Users/jahso/Documents/School/ComputerGraphics/graphics-engine/engine.cc || cmake_object_order_depends_target_engine
-  DEP_FILE = CMakeFiles\engine.dir\engine.cc.obj.d
+build CMakeFiles/engine.dir/engine.cpp.obj: CXX_COMPILER__engine_unscanned_Debug C$:/Users/jahso/Documents/School/ComputerGraphics/graphics-engine/engine.cpp || cmake_object_order_depends_target_engine
+  DEP_FILE = CMakeFiles\engine.dir\engine.cpp.obj.d
   FLAGS = -std=c++14 -g -std=c++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\engine.dir
   OBJECT_FILE_DIR = CMakeFiles\engine.dir
 
-build CMakeFiles/engine.dir/easy_image.cc.obj: CXX_COMPILER__engine_unscanned_Debug C$:/Users/jahso/Documents/School/ComputerGraphics/graphics-engine/easy_image.cc || cmake_object_order_depends_target_engine
-  DEP_FILE = CMakeFiles\engine.dir\easy_image.cc.obj.d
+build CMakeFiles/engine.dir/easy_image.cpp.obj: CXX_COMPILER__engine_unscanned_Debug C$:/Users/jahso/Documents/School/ComputerGraphics/graphics-engine/easy_image.cpp || cmake_object_order_depends_target_engine
+  DEP_FILE = CMakeFiles\engine.dir\easy_image.cpp.obj.d
   FLAGS = -std=c++14 -g -std=c++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\engine.dir
   OBJECT_FILE_DIR = CMakeFiles\engine.dir
 
-build CMakeFiles/engine.dir/ini/ini_configuration.cc.obj: CXX_COMPILER__engine_unscanned_Debug C$:/Users/jahso/Documents/School/ComputerGraphics/graphics-engine/ini/ini_configuration.cc || cmake_object_order_depends_target_engine
-  DEP_FILE = CMakeFiles\engine.dir\ini\ini_configuration.cc.obj.d
+build CMakeFiles/engine.dir/ini/ini_configuration.cpp.obj: CXX_COMPILER__engine_unscanned_Debug C$:/Users/jahso/Documents/School/ComputerGraphics/graphics-engine/ini/ini_configuration.cpp || cmake_object_order_depends_target_engine
+  DEP_FILE = CMakeFiles\engine.dir\ini\ini_configuration.cpp.obj.d
   FLAGS = -std=c++14 -g -std=c++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\engine.dir
   OBJECT_FILE_DIR = CMakeFiles\engine.dir\ini
+
+build CMakeFiles/engine.dir/l-systems.cpp.obj: CXX_COMPILER__engine_unscanned_Debug C$:/Users/jahso/Documents/School/ComputerGraphics/graphics-engine/l-systems.cpp || cmake_object_order_depends_target_engine
+  DEP_FILE = CMakeFiles\engine.dir\l-systems.cpp.obj.d
+  FLAGS = -std=c++14 -g -std=c++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\engine.dir
+  OBJECT_FILE_DIR = CMakeFiles\engine.dir
 
 
 # =============================================================================
@@ -75,7 +81,7 @@ build CMakeFiles/engine.dir/ini/ini_configuration.cc.obj: CXX_COMPILER__engine_u
 #############################################
 # Link the executable engine.exe
 
-build engine.exe: CXX_EXECUTABLE_LINKER__engine_Debug CMakeFiles/engine.dir/engine.cc.obj CMakeFiles/engine.dir/easy_image.cc.obj CMakeFiles/engine.dir/ini/ini_configuration.cc.obj
+build engine.exe: CXX_EXECUTABLE_LINKER__engine_Debug CMakeFiles/engine.dir/engine.cpp.obj CMakeFiles/engine.dir/easy_image.cpp.obj CMakeFiles/engine.dir/ini/ini_configuration.cpp.obj CMakeFiles/engine.dir/l-systems.cpp.obj
   FLAGS = -std=c++14 -g -std=c++14
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\engine.dir
